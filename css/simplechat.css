@@ -1,0 +1,237 @@
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #3E0038;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.home-title {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 80px;
+  color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.header div {
+  padding: 15px;
+  top: 0px;
+  left: 0px;
+  background-color: #333333;
+  width: 100%;
+}
+
+.header-text {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container {
+  background-color: #3E0038;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.options {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.large-button {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+}
+
+.large-button div {
+  border-radius: 6px;
+  margin: 6px;
+  font-size: 20px;
+  background-color: #333333;
+  padding: 16px;
+}
+
+.large-button div:hover {
+  background-color: #555555;
+}
+
+.warning {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  display: none;
+}
+
+.warning div {
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #B80000;
+  padding: 16px;
+}
+
+.col-100 {
+  float: left;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+input[type=submit] {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+}
+
+input[type=submit]:hover {
+  background-color: #555555;
+}
+
+.message-area {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 65px;
+    border: 1px #f2f2f2;
+    min-height: 430px;
+    max-height: 430px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.message-me {
+    background-color: #64325f;
+    color: #ffffff;
+    border-radius: 6px;
+    margin: 6px;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.message-you {
+    background-color: #5b5b5b;
+    color: #ffffff;
+    border-radius: 6px;
+    margin: 6px;
+    font-size: 14px;
+    padding: 8px;
+    text-align: right;
+}
+
+.message-username {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.message-timestamp {
+    font-style: italic;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.message-text {
+    margin-top:3px;
+}
+
+.message-room {
+    font-size: 12px;
+}
+
