@@ -43,7 +43,7 @@ if(strpos($room,",") === false){
     <?php include "include/header.php"; ?>
     
     <div class="container">
-        <div class="options">
+        <div class="chat-options">
             <div class="message-area" id="message-area">
                 <?php
                 $result = $db->query("SELECT m.id, m.username, m.ip, m.timestamp, m.message, c.name FROM messages m, chat_rooms c WHERE m.chat_room_id IN (".$db->real_escape_string(implode(",",$room_array)).") AND m.chat_room_id = c.id ORDER BY m.id");
@@ -85,6 +85,8 @@ if(strpos($room,",") === false){
                     document.getElementById("message-area").scrollTop = document.getElementById("message-area").scrollHeight;
                 </script>
             </div>
+        </div>
+        <div class="message-input">
             <form onsubmit="SimpleChat.addMessage(); return false;" method="post">
                 <div class="row">
                       <div class="col-100">
