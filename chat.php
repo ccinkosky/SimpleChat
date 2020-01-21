@@ -88,7 +88,7 @@ if(strpos($room,",") === false){
             <form onsubmit="SimpleChat.addMessage(); return false;" method="post">
                 <div class="row">
                       <div class="col-100">
-                            <input type="text" id="message" name="message" placeholder="Message...">
+                            <input type="text" id="message" name="message" placeholder="Message..." autocomplete="off">
                             <input type="hidden" id="room_id" value="<?php echo implode(",",$room_array); ?>">
                             <input type="hidden" id="last_message" value="<?php echo $last_message_id; ?>">
                       </div>
